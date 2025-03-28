@@ -149,3 +149,9 @@ mmaction/tools/*
 !demo/*.ipynb
 !projects/stad_tutorial/*.ipynb
 mmaction/.mim
+output_features/
+*.npy
+*.tar.gz
+*.mp4
+*.ckpt
+*.pt
