@@ -1,0 +1,758 @@
+    1  C:\Users\teehe\AppData\Local\Programs\Microsoft VS Code
+    2  sudo apt update
+    3  sudo apt install git
+    4  cd /mnt/c/Users/teehe/Downloads
+    5  git clone https://github.com/gongda0e/FUTR.git
+    6  conda env list
+    7  conda create --name myenv python=3.8
+    8  conda init
+    9  bash Miniconda3-latest-Linux-x86_64.sh
+   10  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+   11  bash Miniconda3-latest-Linux-x86_64.sh
+   12  conda env list
+   13  exec bash
+   14  conda --version
+   15  conda env list
+   16  conda create --name myenv python=3.8
+   17  conda init
+   18  source ~/.bashrc
+   19  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+   20  conda env create -f futr.yaml
+   21  conda activate torch190
+   22  conda list
+   23  ./scripts/bf_train.sh 1
+   24  import torch
+   25  print(torch.cuda.is_available())  # Should return False if no GPU is available
+   26  print(torch.device("cuda" if torch.cuda.is_available() else "cpu"))  
+   27  python
+   28  ./scripts/bf_train.sh 1
+   29  pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+   30  pip uninstall torch torchvision torchaudio
+   31  pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+   32  ./scripts/bf_train.sh 1
+   33  pip install --upgrade lightning-bolts
+   34  ./scripts/bf_train.sh 1
+   35  pip uninstall protobuf
+   36  pip install protobuf==3.20.3
+   37  ./scripts/bf_train.sh 1
+   38  ./scripts/bf_train.sh 1]
+   39  ./scripts/bf_train.sh 1
+   40  python
+   41  ./scripts/bf_train.sh 1
+   42  pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+   43  ./scripts/bf_train.sh 1
+   44  conda activate torch190
+   45  ./scripts/bf_train.sh 1
+   46  (base) root@LAPTOP-LRT0NELI:~/.vscode-remote-containers/FUTR# conda activate torch190
+   47  (torch190) root@LAPTOP-LRT0NELI:~/.vscode-remote-containers/FUTR# ./scripts/bf_train.sh 1
+   48  /root/miniconda3/envs/torch190/lib/python3.8/site-packages/pl_bolts/models/self_supervised/amdim/amdim_module.py:34: UnderReviewWarning: The feature generate_power_seq is currently marked under review. The compatibility with other Lightning projects is not guaranteed and API may change at any time. The API and functionality may change without warning in future releases. More details: https://lightning-bolts.readthedocs.io/en/latest/stability.html
+   49  /root/miniconda3/envs/torch190/lib/python3.8/site-packages/pl_bolts/models/self_supervised/amdim/amdim_module.py:92: UnderReviewWarning: The feature FeatureMapContrastiveTask is currently marked under review. The compatibility with other Lightning projects is not guaranteed and API may change at any time. The API and functionality may change without warning in future releases. More details: https://lightning-bolts.readthedocs.io/en/latest/stability.html
+   50  /root/miniconda3/envs/torch190/lib/python3.8/site-packages/pl_bolts/losses/self_supervised_learning.py:228: UnderReviewWarning: The feature AmdimNCELoss is currently marked under review. The compatibility with other Lightning projects is not guaranteed and API may change at any time. The API and functionality may change without warning in future releases. More details: https://lightning-bolts.readthedocs.io/en/latest/stability.html
+   51  using cpu
+   52  runs :  0
+   53  model type :  futr
+   54  input type :  i3d_transcript
+   55  Epoch :  60
+   56  batch size :  16
+   57  Split :  1
+   58  Traceback (most recent call last):
+   59  AssertionError: Torch not compiled with CUDA enabled
+   60  (torch190) root@LAPTOP-LRT0NELI:~/.vscode-remote-containers/FUT 
+   61  ./scripts/bf_train.sh 1
+   62  (torch190) root@LAPTOP-LRT0NELI:~/.vscode-remote-containers/FUTR# ./scripts/bf_train.sh 1
+   63  /root/miniconda3/envs/torch190/lib/python3.8/site-packages/pl_bolts/models/self_supervised/amdim/amdim_module.py:34: UnderReviewWarning: The feature generate_power_seq is currently marked under review. The compatibility with other Lightning projects is not guaranteed and API may change at any time. The API and functionality may change without warning in future releases. More details: https://lightning-bolts.readthedocs.io/en/latest/stability.html
+   64  /root/miniconda3/envs/torch190/lib/python3.8/site-packages/pl_bolts/models/self_supervised/amdim/amdim_module.py:92: UnderReviewWarning: The feature FeatureMapContrastiveTask is currently marked under review. The compatibility with other Lightning projects is not guaranteed and API may change at any time. The API and functionality may change without warning in future releases. More details: https://lightning-bolts.readthedocs.io/en/latest/stability.html
+   65  /root/miniconda3/envs/torch190/lib/python3.8/site-packages/pl_bolts/losses/self_supervised_learning.py:228: UnderReviewWarning: The feature AmdimNCELoss is currently marked under review. The compatibility with other Lightning projects is not guaranteed and API may change at any time. The API and functionality may change without warning in future releases. More details: https://lightning-bolts.readthedocs.io/en/latest/stability.html
+   66  using cpu
+   67  runs :  0
+   68  model type :  futr
+   69  input type :  i3d_transcript
+   70  Epoch :  60
+   71  batch size :  16
+   72  Split :  1
+   73  main.py:94: UnderReviewWarning: The feature LinearWarmupCosineAnnealingLR is currently marked under review. The compatibility with other Lightning projects is not guaranteed and API may change at any time. The API and functionality may change without warning in future releases. More details: https://lightning-bolts.readthedocs.io/en/latest/stability.html
+   74  /root/miniconda3/envs/torch190/lib/python3.8/site-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 30 worker processes in total. Our suggested max number of worker in current system is 16, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+   75  Training Start
+   76  Traceback (most recent call last):
+   77  The above exception was the direct cause of the following exception:
+   78  Traceback (most recent call last):
+   79  RuntimeError: DataLoader worker (pid(s) 7074, 7286, 7302) exited unexpectedly
+   80  (torch190) root@LAPTOP-LRT0NELI:~/.vscode-remote-containers/FUTR
+   81  ./scripts/bf_train.sh 1
+   82  rch190/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+   83      return forward_call(*args, **kwargs)
+   84    File "/root/miniconda3/envs/torch190/lib/python3.8/site-packages/torch/nn/modules/linear.py", line 117, in forward
+   85      return F.linear(input, s
+   86  ./scripts/bf_train.sh 1
+   87  ./scripts/bf_train.sh 1
+   88  conda activate torch190
+   89  ./scripts/bf_train.sh 1
+   90  cat ./scripts/bf_train.sh
+   91  ./scripts/bf_train.sh 1
+   92  tensorboard --logdir=runs --port=6006
+   93  conda activate futr
+   94  conda activate torch190
+   95  ./scripts/predict.sh 1
+   96  ./scripts/bf_predict.sh 1
+   97  conda activate futr
+   98  conda activate torch190
+   99  python FUTR-main/test.py --feature_file datasets/breakfast/features/video_features_reshaped.npy
+  100  python FUTR-main/test.py --/root/.vscode-remote-containers/FUTR/datasets/breakfast/features/video_features_reshaped.npy
+  101  find /root/.vscode-remote-containers/FUTR -name "test.py"
+  102  python /root/.vscode-remote-containers/FUTR-main/test.py --feature_file /root/.vscode-remote-containers/FUTR/datasets/breakfast/features/video_features_reshaped.npy
+  103  python /root/.vscode-remote-containers/FUTR-main/model/test.py --feature_file /root/.vscode-remote-containers/FUTR/datasets/breakfast/features/video_features_reshaped.npy
+  104  /root/.vscode-remote-containers/FUTR/datasets/breakfast/features/video_features_reshaped.npy
+  105  find /root/.vscode-remote-containers/FUTR -name "*.py"
+  106  cat scripts/bf_predict.sh
+  107  python predict.py --feature_file /root/.vscode-remote-containers/FUTR/datasets/breakfast/features/video_features_reshaped.npy
+  108  python scripts/predict.py --feature_file /root/.vscode-remote-containers/FUTR/datasets/breakfast/features/video_features_reshaped.npy
+  109  python predict.py --feature_file /root/.vscode-remote-containers/FUTR/datasets/breakfast/features/video_features_reshaped.npy
+  110  cd /root/.vscode-remote-containers/FUTR
+  111  python
+  112  python predict.py --feature_file /root/.vscode-remote-containers/FUTR/datasets/breakfast/features/video_features_reshaped.npy
+  113  bash scripts/bf_predict.sh /root/.vscode-remote-containers/FUTR/datasets/breakfast/features/video_features_reshaped.npy
+  114  bash scripts/bf_predict.sh datasets/breakfast/features/video_features_reshaped.npy
+  115  python main.py --feature_file datasets/breakfast/features/video_features_reshaped.npy
+  116  python main.py --features_path datasets/breakfast/features/video_features_reshaped.npy
+  117  conda activate torch190
+  118  conda list
+  119  cat model/futr.py | grep "pos_embedding"
+  120  # Create a virtual environment (optional but recommended)
+  121  python -m venv mmaction-env
+  122  source mmaction-env/bin/activate  # Linux/macOS
+  123  # OR
+  124  mmaction-env\Scripts\activate     # Windows
+  125  # Install PyTorch (CUDA version recommended)
+  126  pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+  127  # Install MMCV and MMAction2 dependencies
+  128  pip install openmim
+  129  mim install mmcv-full
+  130  pip install decord  # For video decoding
+  131  cd path/to/mmaction2  # Replace with your actual path
+  132  pip install -r requirements/build.txt
+  133  pip install -v -e .  # Editable install for code modifications
+  134  python -c "import mmaction; print(mmaction.__version__)"
+  135  # Should output the version (e.g., 1.1.0)
+  136  conda deactivate          # Exit the base environment
+  137  source mmaction-env/bin/activate  # Activate your virtual environment (Linux/macOS)
+  138  # OR (Windows)
+  139  mmaction-env\Scripts\activate
+  140  git clone https://github.com/open-mmlab/mmaction2.git
+  141  rm -rf mmaction2  # Use caution, as this will delete the directory permanently
+  142  git clone https://github.com/open-mmlab/mmaction2.git
+  143  cd mmaction2
+  144  rm -rf mmaction2
+  145  cd mmaction2
+  146  pwd
+  147  ls
+  148  pip install -r requirements.txt
+  149  pip install -v -e .
+  150  mkdir -p checkpoints
+  151  ls checkpoints/
+  152  python tools/test.py configs/recognition/i3d/i3d_imagenet-pretrained-r50-heavy_8x8-32x2x1-100e_kinetics400-rgb.py checkpoints/i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb_20220812-ed501b31.pth --eval top_k_accuracy
+  153  pip install mmengine
+  154  pip install -r requirements.txt
+  155  pip install -v -e .
+  156  python tools/test.py configs/recognition/i3d/i3d_imagenet-pretrained-r50-heavy_8x8-32x2x1-100e_kinetics400-rgb.py checkpoints/i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb_20220812-ed501b31.pth --eval top_k_accuracy
+  157  pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cpu/torch2.0/index.html
+  158  conda create -n mmaction2_env python=3.9 -y
+  159  conda activate mmaction2_env
+  160  pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+  161  pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cpu/torch2.0/index.html
+  162  git clone https://github.com/open-mmlab/mmaction2.git
+  163  cd mmaction2
+  164  pip install -r requirements/build.txt
+  165  pip install -v -e .
+  166  python -c "import mmaction; print(mmaction.__version__)"
+  167  pip install mmengine
+  168  python -c "import mmaction; print(mmaction.__version__)"
+  169  pip install -U "mmcv>=2.0.0rc4,<2.2.0"
+  170  sudo apt update
+  171  sudo apt install -y g++
+  172  g++ --version
+  173  pip install -U "mmcv>=2.0.0rc4,<2.2.0" --force-reinstall
+  174  python -c "import mmcv; print(mmcv.__version__)"
+  175  python -c "import mmaction; print(mmaction.__version__)"
+  176  python -c "from mmaction.apis import inference_recognizer; print('MMACTION2 is working\!')"
+  177  python -c 'from mmaction.apis import inference_recognizer; print("MMACTION2 is successfully imported and ready for inference!")'
+  178  wget https://raw.githubusercontent.com/open-mmlab/mmaction2/master/demo/demo.mp4
+  179  python demo/demo.py configs/recognition/tsn/tsn_r50_video_inference_1x1x3_100e_kinetics400_rgb.py     checkpoints/tsn_r50_1x1x3_100e_kinetics400_rgb.pth     demo.mp4
+  180  mkdir checkpoints
+  181  wget -P checkpoints https://download.openmmlab.com/mmaction/recognition/i3d/i3d_r50_32x2x1_100e_kinetics400_rgb/i3d_r50_32x2x1_100e_kinetics400_rgb_20220818-57e3faff.pth
+  182  python demo/demo.py     configs/recognition/i3d/i3d_r50_32x2x1_100e_kinetics400_rgb.py     /root/mmaction2-1/checkpoints/i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb_20220812-ed501b31.pth     demo.mp4     demo/label_map_k400.txt
+  183  wget -P configs/recognition/i3d/ https://raw.githubusercontent.com/open-mmlab/mmaction2/main/configs/recognition/i3d/i3d_r50_32x2x1_100e_kinetics400_rgb.py
+  184  wget -P configs/recognition/i3d/ https://raw.githubusercontent.com/open-mmlab/mmaction2/main/configs/recognition/i3d/i3d_r50_32x2x1_100e_kinetics400_rgb.pypython demo/demo.py     /root/mmaction2-1/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb.py     /root/mmaction2-1/checkpoints/i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb_20220812-ed501b31.pth     demo.mp4     demo/label_map_k400.txt
+  185  wget -P configs/recognition/i3d/ https://raw.githubusercontent.com/open-mmlab/mmaction2/main/configs/recognition/i3d/i3d_r50_32x2x1_100e_kinetics400_rgb.py
+  186  mkdir -p /root/mmaction2-1/mmaction2/demo
+  187  mv /path/to/your/demo.mp4 /root/mmaction2-1/mmaction2/demo/
+  188  mkdir -p /root/mmaction2-1/mmaction2/demo
+  189  python demo/demo.py     /root/mmaction2-1/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb.py     /root/mmaction2-1/checkpoints/i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb_20220812-ed501b31.pth     /root/mmaction2-1/demo/demo.mp4     demo/label_map_k400.txt
+  190  pip install importlib_metadata
+  191  python demo/demo.py     /root/mmaction2-1/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb.py     /root/mmaction2-1/checkpoints/i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb_20220812-ed501b31.pth     /root/mmaction2-1/demo/demo.mp4     demo/label_map_k400.txt
+  192  CUDA_VISIBLE_DEVICES=-1 python demo/demo.py     /root/mmaction2-1/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb.py     /root/mmaction2-1/checkpoints/i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb_20220812-ed501b31.pth     /root/mmaction2-1/demo/demo.mp4     demo/label_map_k400.txt
+  193  python demo/demo.py     /root/mmaction2-1/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb.py     /root/mmaction2-1/checkpoints/i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb_20220812-ed501b31.pth     /root/mmaction2-1/demo/demo.mp4     demo/label_map_k400.txt     --device cpu
+  194  python demo/demo.py     /root/mmaction2-1/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb.py     /root/mmaction2-1/checkpoints/i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb_20220812-ed501b31.pth     /root/mmaction2-1/demo/demo.mp4     demo/label_map_k400.txt     --device cpu
+  195  CUDA_VISIBLE_DEVICES=-1 python tools/test.py /root/mmaction2-1/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb.py /root/mmaction2-1/checkpoints/i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb_20220812-ed501b31.pth --eval top_k_accuracy
+  196  conda create --name openmmlab python=3.8 -y
+  197  conda activate openmmlab
+  198  conda install pytorch torchvision -c pytorch  # This command will automatically install the latest version PyTorch and cudatoolkit, please check whether they match your environment.
+  199  pip install -U openmim
+  200  mim install mmengine
+  201  mim install mmcv
+  202  mim install mmdet  # optional
+  203  mim install mmpose  # optional
+  204  git clone https://github.com/open-mmlab/mmaction2.git
+  205  cd mmaction2
+  206  pip install -v -e .
+  207  CUDA_VISIBLE_DEVICES=-1 python tools/test.py /root/mmaction2-1/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb.py /root/mmaction2-1/checkpoints/i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb_20220812-ed501b31.pth --eval top_k_accuracy
+  208  pip uninstall mmcv -y
+  209  pip install mmcv==2.1.0
+  210  CUDA_VISIBLE_DEVICES=-1 python tools/test.py /root/mmaction2-1/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb.py /root/mmaction2-1/checkpoints/i3d_imagenet-pretrained-r50-heavy_8xb8-32x2x1-100e_kinetics400-rgb_20220812-ed501b31.pth --eval top_k_accuracy
+  211  python tools/test.py --help
+  212  python tools/test.py /root/mmaction2-1/configs/recognition/i3d/i3d_imagenet-pretrained-r50-nl-embedded-gaussian_8xb8-32x2x1-100e_kinetics400-rgb.py /root/mmaction2-1/checkpoints/i3d_imagenet-pretrained-r50-nl-embedded-gaussian_8xb8-32x2x1-100e_kinetics400-rgb_20220812-afd8f562.pth
+  213  ls -lah data/kinetics400/
+  214  mkdir -p data/kinetics400/  # Ensure the directory exists
+  215  wget -O data/kinetics400/kinetics400_val_list_videos.txt https://download.openmmlab.com/mmaction/dataset/k400_val/kinetics_val_list.txt
+  216  CUDA_VISIBLE_DEVICES=-1 python tools/test.py /root/mmaction2-1/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50-nl-embedded-gaussian_8xb8-32x2x1-100e_kinetics400-rgb.py /root/mmaction2-1/checkpoints/i3d_imagenet-pretrained-r50-nl-embedded-gaussian_8xb8-32x2x1-100e_kinetics400-rgb_20220812-afd8f562.pth
+  217  mkdir -p data/kinetics400/
+  218  cd data/kinetics400/
+  219  # Download annotations
+  220  wget https://download.openmmlab.com/mmaction/dataset/kinetics400/kinetics400_train_list_videos.txt
+  221  wget https://download.openmmlab.com/mmaction/dataset/kinetics400/kinetics400_val_list_videos.txt
+  222  wget https://download.openmmlab.com/mmaction/dataset/kinetics400/kinetics400_test_list_videos.txt
+  223  cd tools/data/kinetics
+  224  cd mmaction2/tools/data/kinetics
+  225  cd /root/mmaction2-1/mmaction2/tools/data/kinetics
+  226  bash download_annotations.sh kinetics400
+  227  bash download_videos.sh kinetics400
+  228  youtube-dl --quiet --no-warnings --no-check-certificate -f mp4 -o "/tmp/kinetics/.tmp_dir/91807f24-34b6-41de-9fea-5178185f61c9.%(ext)s" "https://www.youtube.com/watch?v=-02UO1KSdZ0"
+  229  pip install yt-dlp
+  230  yt-dlp --quiet --no-warnings --no-check-certificate -f mp4 -o "/tmp/kinetics/.tmp_dir/91807f24-34b6-41de-9fea-5178185f61c9.%(ext)s" "https://www.youtube.com/watch?v=-02UO1KSdZ0"
+  231  pip install --upgrade youtube-dl
+  232  youtube-dl --quiet --no-warnings --no-check-certificate -f mp4 -o "/tmp/kinetics/.tmp_dir/91807f24-34b6-41de-9fea-5178185f61c9.%(ext)s" "https://www.youtube.com/watch?v=-02UO1KSdZ0"
+  233  yt-dlp --quiet --no-warnings --no-check-certificate -f mp4 -o "/tmp/kinetics/.tmp_dir/91807f24-34b6-41de-9fea-5178185f61c9.%(ext)s" "https://www.youtube.com/watch?v=-02UO1KSdZ0"
+  234  # Exit the root environment if possible, then:
+  235  pip install yt-dlp
+  236  yt-dlp --quiet --no-warnings --no-check-certificate -f mp4 -o "/tmp/kinetics/.tmp_dir/91807f24-34b6-41de-9fea-5178185f61c9.%(ext)s" "https://www.youtube.com/watch?v=-02UO1KSdZ0"
+  237  youtube-dl --force-generic-extractor --quiet --no-warnings --no-check-certificate -f mp4 -o "/tmp/kinetics/.tmp_dir/91807f24-34b6-41de-9fea-5178185f61c9.%(ext)s" "https://www.youtube.com/watch?v=-02UO1KSdZ0"
+  238  pip install -U yt-dlp
+  239  yt-dlp --quiet --no-warnings --no-check-certificate -f mp4 -o "/tmp/kinetics/.tmp_dir/%(id)s.%(ext)s" "https://www.youtube.com/watch?v=-02UO1KSdZ0"
+  240  pip uninstall youtube-dl
+  241  pip install -U yt-dlp
+  242  yt-dlp --quiet --no-warnings --no-check-certificate -f mp4 -o "/tmp/kinetics/.tmp_dir/%(id)s.%(ext)s" "https://www.youtube.com/watch?v=-02UO1KSdZ0"
+  243  pip install -U openxlab
+  244  openxlab login
+  245  ~/mmaction2-1/mmaction2/tools/data/kinetics# openxlab login
+  246  openxlab login
+  247  o8m6vjzo9blna0e1anqz
+  248  openxlab login
+  249  mim download mmaction2 --dataset kinetics400
+  250  cd ~/mmaction2/tools/data/kinetics/
+  251  bash download_annotations.sh kinetics400
+  252  bash download_videos.sh kinetics400
+  253  pip install joblib
+  254  bash download_videos.sh kinetics400
+  255  ls /tmp/kinetics/.tmp_dir/ | wc -l
+  256  ls -lh /tmp/kinetics/.tmp_dir/
+  257  du -sh /tmp/kinetics/.tmp_dir/
+  258  find /tmp/kinetics/.tmp_dir/ -name "*.part"
+  259  wc -l /path/to/kinetics400_val_list_videos.txt
+  260  ls ~/mmaction2/tools/data/kinetics/ | grep kinetics400
+  261  ls -lh /tmp/kinetics/.tmp_dir/
+  262  mv /tmp/kinetics/.tmp_dir/* ~/mmaction2/tools/data/kinetics/videos/
+  263  mv /tmp/kinetics/.tmp_dir/* /root/mmaction2-1/mmaction2/tools/data/kinetics/data/
+  264  wget https://s3.amazonaws.com/kinetics/700_2020/kinetics_700_2020_test.csv -O kinetics_test.csv
+  265  git clone https://github.com/cvdfoundation/kinetics-dataset.git
+  266  cd kinetics-dataset
+  267  bash ./k400_downloader.sh
+  268  mkdir -p ~/mmaction2/tools/data/kinetics/k400_test_videos
+  269  cd ~/mmaction2/tools/data/kinetics/k400_test_videos
+  270  wget -c https://s3.amazonaws.com/kinetics/400/test/part_0.tar.gz
+  271  wget -c https://s3.amazonaws.com/kinetics/400/test/part_1.tar.gz
+  272  wget -c https://s3.amazonaws.com/kinetics/400/test/part_2.tar.gz
+  273  wget -c https://s3.amazonaws.com/kinetics/400/test/part_3.tar.gz
+  274  wget -c https://s3.amazonaws.com/kinetics/400/test/part_4.tar.gz
+  275  wget -c https://s3.amazonaws.com/kinetics/400/test/part_5.tar.gz
+  276  wget -c https://s3.amazonaws.com/kinetics/400/test/part_6.tar.gz
+  277  wget -c https://s3.amazonaws.com/kinetics/400/test/part_7.tar.gz
+  278  wget -c https://s3.amazonaws.com/kinetics/400/test/part_8.tar.gz
+  279  wget -c https://s3.amazonaws.com/kinetics/400/test/part_9.tar.gz
+  280  wget -c https://s3.amazonaws.com/kinetics/400/test/part_10.tar.gz
+  281  cat k400_extractor.sh
+  282  bash ./k400_extractor.sh
+  283  cd ~/mmaction2/tools/data/kinetics/k400_test_videos
+  284  mkdir -p extracted_videos
+  285  bash ./k400_extractor.sh
+  286  for f in *.tar.gz; do     tar -xvf "$f" -C extracted_videos; done
+  287  ls -lh extracted_videos/
+  288  ls -lh ~/mmaction2/tools/data/kinetics/k400_test_videos/extracted_videos/
+  289  find ~/mmaction2/ -type f -name "*.mp4"
+  290  cd /root/mmaction2-1/mmaction2
+  291  python tools/test.py configs/recognition/i3d/i3d_imagenet-pretrained-r50-nl-gaussian_8xb8-32x2x1-100e_kinetics400-rgb.py checkpoints/i3d_imagenet-pretrained-r50-nl-gaussian_8xb8-32x2x1-100e_kinetics400-rgb_20220812-0c5cbf5a.pth --eval top_k_accuracy
+  292  python tools/test.py configs/recognition/i3d/i3d_imagenet-pretrained-r50-nl-gaussian_8xb8-32x2x1-100e_kinetics400-rgb.py checkpoints/i3d_imagenet-pretrained-r50-nl-gaussian_8xb8-32x2x1-100e_kinetics400-rgb_20220812-0c5cbf5a.pth --metrics top_k_accuracy
+  293  python tools/test.py configs/recognition/i3d/i3d_imagenet-pretrained-r50-nl-gaussian_8xb8-32x2x1-100e_kinetics400-rgb.py checkpoints/i3d_imagenet-pretrained-r50-nl-gaussian_8xb8-32x2x1-100e_kinetics400-rgb_20220812-0c5cbf5a.pth --eval top_k_accuracy
+  294  python tools/test.py configs/recognition/i3d/i3d_imagenet-pretrained-r50-nl-gaussian_8xb8-32x2x1-100e_kinetics400-rgb.py checkpoints/i3d_imagenet-pretrained-r50-nl-gaussian_8xb8-32x2x1-100e_kinetics400-rgb_20220812-0c5cbf5a.pth --eval accuracy
+  295  python tools/test.py --help
+  296  python tools/test.py configs/recognition/i3d/i3d_imagenet-pretrained-r50-nl-gaussian_8xb8-32x2x1-100e_kinetics400-rgb.py checkpoints/i3d_imagenet-pretrained-r50-nl-gaussian_8xb8-32x2x1-100e_kinetics400-rgb_20220812-0c5cbf5a.pth --dump results.pkl
+  297  ls -lh data/kinetics400/
+  298  python tools/test.py configs/recognition/i3d/i3d_imagenet-pretrained-r50-nl-gaussian_8xb8-32x2x1-100e_kinetics400-rgb.py checkpoints/i3d_imagenet-pretrained-r50-nl-gaussian_8xb8-32x2x1-100e_kinetics400-rgb_20220812-0c5cbf5a.pth --work-dir work_dirs/i3d_test --cfg-options data.test.ann_file="tools/data/kinetics/data/kinetics400_test_list_videos.txt" --show-dir results/test_output
+  299  python tools/test.py configs/recognition/i3d/i3d_imagenet-pretrained-r50-nl-gaussian_8xb8-32x2x1-100e_kinetics400-rgb.py checkpoints/i3d_imagenet-pretrained-r50-nl-gaussian_8xb8-32x2x1-100e_kinetics400-rgb_20220812-0c5cbf5a.pth --work-dir work_dirs/i3d_test --cfg-options data.test.ann_file="tools/data/kinetics/data/kinetics400_test_list_videos.txt" default_hooks.visualization="dict(type='VisualizationHook')" --show-dir results/test_output
+  300  nano configs/recognition/i3d/i3d_imagenet-pretrained-r50-nl-gaussian_8xb8-32x2x1-100e_kinetics400-rgb.py
+  301  python tools/test.py configs/recognition/i3d/i3d_imagenet-pretrained-r50-nl-gaussian_8xb8-32x2x1-100e_kinetics400-rgb.py checkpoints/i3d_imagenet-pretrained-r50-nl-gaussian_8xb8-32x2x1-100e_kinetics400-rgb_20220812-0c5cbf5a.pth --work-dir work_dirs/i3d_test --cfg-options data.test.ann_file="tools/data/kinetics/data/kinetics400_test_list_videos.txt" --show-dir results/test_output
+  302  self.draw_args = {**kwargs, "show_frames": show}
+  303  cd ~/mmaction2-1/mmaction2
+  304  find . -name "visualization_hook.py"
+  305  python tools/test.py configs/recognition/i3d/i3d_imagenet-pretrained-r50-nl-gaussian_8xb8-32x2x1-100e_kinetics400-rgb.py checkpoints/i3d_imagenet-pretrained-r50-nl-gaussian_8xb8-32x2x1-100e_kinetics400-rgb_20220812-0c5cbf5a.pth --work-dir work_dirs/i3d_test --cfg-options data.test.ann_file="tools/data/kinetics/data/kinetics400_test_list_videos.txt" default_hooks.visualization="dict(type='VisualizationHook')" --show-dir results/test_output
+  306  python tools/test.py configs/recognition/i3d/i3d_imagenet-pretrained-r50-nl-gaussian_8xb8-32x2x1-100e_kinetics400-rgb.py checkpoints/i3d_imagenet-pretrained-r50-nl-gaussian_8xb8-32x2x1-100e_kinetics400-rgb_20220812-0c5cbf5a.pth --work-dir work_dirs/i3d_test --cfg-options data.test.ann_file="tools/data/kinetics/data/kinetics400_test_list_videos.txt" --show-dir results/test_output
+  307  find . -name "visualization_hook.py"
+  308  python tools/test.py     /root/mmaction2-1/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50-nl-dot-product_8xb8-32x2x1-100e_kinetics400-rgb.py     /root/mmaction2-1/checkpoints/i3d_imagenet-pretrained-r50-nl-dot-product_8xb8-32x2x1-100e_kinetics400-rgb_20220812-8e1f2148.pth     --out results.pkl     --eval top_k_accuracy mean_class_accuracy
+  309  python tools/test.py     /root/mmaction2-1/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50-nl-dot-product_8xb8-32x2x1-100e_kinetics400-rgb.py     /root/mmaction2-1/checkpoints/i3d_imagenet-pretrained-r50-nl-dot-product_8xb8-32x2x1-100e_kinetics400-rgb_20220812-8e1f2148.pth     --eval top_k_accuracy mean_class_accuracy
+  310  python tools/test.py     /root/mmaction2-1/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50-nl-dot-product_8xb8-32x2x1-100e_kinetics400-rgb.py     /root/mmaction2-1/checkpoints/i3d_imagenet-pretrained-r50-nl-dot-product_8xb8-32x2x1-100e_kinetics400-rgb_20220812-8e1f2148.pth     --dump results.pkl     --eval top_k_accuracy mean_class_accuracy
+  311  python tools/test.py     /root/mmaction2-1/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50-nl-dot-product_8xb8-32x2x1-100e_kinetics400-rgb.py     /root/mmaction2-1/checkpoints/i3d_imagenet-pretrained-r50-nl-dot-product_8xb8-32x2x1-100e_kinetics400-rgb_20220812-8e1f2148.pth     --dump results.pkl
+  312  /bin/python3 /root/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/printEnvVariablesToFile.py /root/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/deactivate/bash/envVars.txt
+  313  conda list
+  314  conda env
+  315  conda env list
+  316  conda activate mmaction2_env
+  317  conda list
+  318  tar -tf k400_targz/train/part_1.tar.gz | head
+  319  ~/mmaction2/tools/data/kinetics/k400_targz/test/
+  320  find ~/ -type f -name "*.tar.gz" -size +1G 2>/dev/null
+  321  mkdir -p /root/mmaction2/tools/data/kinetics/data/test_videos
+  322  tar -xzvf /root/mmaction2/tools/data/kinetics/data/part_0.tar.gz -C /root/mmaction2/tools/data/kinetics/data/test_videos/
+  323  tar -xzvf /root/mmaction2/tools/data/kinetics/data/part_1.tar.gz -C /root/mmaction2/tools/data/kinetics/data/test_videos/
+  324  tar -xzvf /root/mmaction2/tools/data/kinetics/data/part_2.tar.gz -C /root/mmaction2/tools/data/kinetics/data/test_videos/
+  325  tar -xzvf /root/mmaction2/tools/data/kinetics/data/part_3.tar.gz -C /root/mmaction2/tools/data/kinetics/data/test_videos/
+  326  tar -xzvf /root/mmaction2/tools/data/kinetics/data/part_4.tar.gz -C /root/mmaction2/tools/data/kinetics/data/test_videos/
+  327  tar -xzvf /root/mmaction2/tools/data/kinetics/data/part_5.tar.gz -C /root/mmaction2/tools/data/kinetics/data/test_videos/
+  328  tar -xzvf /root/mmaction2/tools/data/kinetics/data/part_6.tar.gz -C /root/mmaction2/tools/data/kinetics/data/test_videos/
+  329  tar -xzvf /root/mmaction2/tools/data/kinetics/data/part_7.tar.gz -C /root/mmaction2/tools/data/kinetics/data/test_videos/
+  330  tar -xzvf /root/mmaction2/tools/data/kinetics/data/part_8.tar.gz -C /root/mmaction2/tools/data/kinetics/data/test_videos/
+  331  tar -xzvf /root/mmaction2/tools/data/kinetics/data/part_9.tar.gz -C /root/mmaction2/tools/data/kinetics/data/test_videos/
+  332  tar -xzvf /root/mmaction2/tools/data/kinetics/data/part_10.tar.gz -C /root/mmaction2/tools/data/kinetics/data/test_videos/
+  333  mkdir -p /root/mmaction2/tools/data/kinetics/data/  # Ensure target directory exists
+  334  mv /root/mmaction2/tools/data/kinetics/k400_test_videos/*.tar.gz /root/mmaction2/tools/data/kinetics/data/
+  335  mkdir -p /root/mmaction2/tools/data/kinetics/data/test_videos  # Ensure extraction directory exists
+  336  for file in /root/mmaction2/tools/data/kinetics/data/*.tar.gz; do     tar -xzvf "$file" -C /root/mmaction2/tools/data/kinetics/data/test_videos/; done
+  337  find /root/mmaction2/tools/data/kinetics/data/test_videos/ -type f -name "*.mp4" | wc -l
+  338  whers all tehse video
+  339  ls -lh /root/mmaction2/tools/data/kinetics/data/test_videos/
+  340  ls -lh /root/mmaction2/tools/data/kinetics/k400_test_videos/
+  341  ls -lh /root/mmaction2/tools/data/kinetics/k400_test_videos/extracted_videos/
+  342  python tools/data/build_file_list.py kinetics     /root/mmaction2/tools/data/kinetics/k400_test_videos/extracted_videos/     --format video     --level 1     --subset test     --shuffle
+  343  python tools/test.py     configs/recognition/i3d/i3d_r50_32x2x1_100e_kinetics400_rgb.py     /path/to/your/model_checkpoint.pth     --eval top_k_accuracy mean_class_accuracy
+  344  python tools/test.py     configs/recognition/i3d/i3d_r50_32x2x1_100e_kinetics400_rgb.py     /path/to/your/model_checkpoint.pth     --eval top_k_accuracy     --eval mean_class_accuracy
+  345  python tools/test.py     configs/recognition/i3d/i3d_r50_32x2x1_100e_kinetics400_rgb.py     /path/to/your/model_checkpoint.pth     --eval top_k_accuracy mean_class_accuracy
+  346  python tools/test.py     configs/recognition/i3d/i3d_r50_video_32x2x1_100e_kinetics400_rgb.py     /root/mmaction2/tools/data/kinetics/checkpoints/i3d_r50_video_32x2x1_100e_kinetics400_rgb.pth     --eval top_k_accuracy mean_class_accuracy     --out /root/mmaction2/tools/data/kinetics/results/result.json     --average-clips prob
+  347  python tools/test.py --help
+  348  python tools/test.py     configs/recognition/i3d/i3d_r50_video_32x2x1_100e_kinetics400_rgb.py     /root/mmaction2/tools/data/kinetics/checkpoints/i3d_r50_video_32x2x1_100e_kinetics400_rgb.pth     --out /root/mmaction2/tools/data/kinetics/results/result.json
+  349  python tools/test.py /root/mmaction2-1/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50-nl-dot-product_8xb8-32x2x1-100e_kinetics400-rgb.py /root/mmaction2-1/checkpoints/i3d_imagenet-pretrained-r50-nl-dot-product_8xb8-32x2x1-100e_kinetics400-rgb_20220812-8e1f2148.pth --dump result.pkl
+  350  strings /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep GLIBCXX
+  351  sudo apt update
+  352  sudo apt install build-essential software-properties-common -y
+  353  sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
+  354  sudo apt update
+  355  sudo apt install gcc-13 g++-13 -y
+  356  python tools/test.py /root/mmaction2-1/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50-nl-dot-product_8xb8-32x2x1-100e_kinetics400-rgb.py /root/mmaction2-1/checkpoints/i3d_imagenet-pretrained-r50-nl-dot-product_8xb8-32x2x1-100e_kinetics400-rgb_20220812-8e1f2148.pth --dump result.pkl
+  357  cd /usr/lib/x86_64-linux-gnu/
+  358  sudo mv libstdc++.so.6 libstdc++.so.6.old
+  359  sudo ln -s /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so.6 libstdc++.so.6
+  360  find /usr/lib -name "libstdc++.so.6"
+  361  ldd /root/miniconda3/envs/mmaction2_env/lib/python3.9/site-packages/mmcv/_ext.cpython-39-x86_64-linux-gnu.so | grep libstdc++
+  362  ln -sf /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /root/miniconda3/envs/mmaction2_env/lib/
+  363  export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH
+  364  echo $LD_LIBRARY_PATH
+  365  ldd /root/miniconda3/envs/mmaction2_env/lib/python3.9/site-packages/mmcv/_ext.cpython-39-x86_64-linux-gnu.so | grep libstdc++
+  366  conda list | grep gcc
+  367  conda remove --force libgcc gcc
+  368  conda install -c conda-forge gcc libstdcxx-ng
+  369  strings $(which g++) | grep GLIBCXX
+  370  rm -rf ~/mmaction2-1
+  371  rm -rf ~/mmaction2
+  372  conda env list
+  373  conda remove --name mmaction2_env --all
+  374  rm -rf ~/miniconda3/envs/mmaction2_env
+  375  rm -rf ~/miniconda3/pkgs
+  376  rm -rf ~/mmaction2-datasets
+  377  conda env list
+  378  conda create conda --version
+  379  conda create --name myenv python=3.9
+  380  conda activate myenv
+  381  mmaction2/configs/recognition/i3d/
+  382  pip install -r requirements.txt
+  383  pip install -v -e .
+  384  configs/recognition/i3d/
+  385  wget -P /root/mmaction2/tools/data/kinetics/k400_test_videos/     https://s3.amazonaws.com/kinetics/400/test/part_0.tar.gz ls
+  386  # Check nvcc version
+  387  # Check GCC version
+  388  # Check nvcc version
+  389  nvcc -V
+  390  # Check GCC version
+  391  gcc --version
+  392  apt install nvidia-cuda-toolkit
+  393  pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+  394  %pip install -U openmim
+  395  mim install mmengine
+  396  mim install "mmcv>=2.0.0"
+  397  # Install mmaction2
+  398  rm -rf mmaction2
+  399  git clone https://github.com/open-mmlab/mmaction2.git -b main
+  400  %cd mmaction2
+  401  pip install -e .
+  402  # Install some optional requirements
+  403  pip install -r requirements/optional.txt
+  404  # Check Pytorch installation
+  405  import torch, torchvision
+  406  print(torch.__version__, torch.cuda.is_available())
+  407  # Check MMAction2 installation
+  408  import mmaction
+  409  print(mmaction.__version__)
+  410  # Check MMCV installation
+  411  from mmcv.ops import get_compiling_cuda_version, get_compiler_version
+  412  print(get_compiling_cuda_version())
+  413  print(get_compiler_version())
+  414  # Check MMEngine installation
+  415  from mmengine.utils.dl_utils import collect_env
+  416  print(collect_env())
+  417  python
+  418  # Conda script to check installations
+  419  # Check PyTorch installation
+  420  conda list pytorch
+  421  # Check torchvision installation
+  422  conda list torchvision
+  423  # Check MMAction2 installation
+  424  conda list mmaction2
+  425  # Check MMCV installation
+  426  conda list mmcv
+  427  # Check MMEngine installation
+  428  conda list mmengine
+  429  # Check CUDA availability
+  430  python -c "import torch; print(f'CUDA Available: {torch.cuda.is_available()}')"
+  431  # Check compiler versions
+  432  python -c "from mmcv.ops import get_compiling_cuda_version, get_compiler_version; print(f'Compiling CUDA Version: {get_compiling_cuda_version()}'); print(f'Compiler Version: {get_compiler_version()}')"
+  433  # Check environment details
+  434  python -c "from mmengine.utils.dl_utils import collect_env; print(collect_env())"
+  435  conda list mmcv
+  436  pip install -r requirements.txt
+  437  pwd
+  438  python help.py 
+  439  nvcc --version
+  440  gcc --version
+  441  pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+  442  py --version
+  443  python --version
+  444  pip --version
+  445  conda env list
+  446  conda activate base
+  447  python# Check nvcc version
+  448  nvcc -V
+  449  # Check GCC version
+  450  gcc --version
+  451  conda create --name openmmlab python=3.8 -y
+  452  conda activate openmmlab
+  453  conda install pytorch torchvision -c pytorch
+  454  conda install pytorch torchvision cpuonly -c pytorch
+  455  conda uninstall pytorch torchvision -c pytorch
+  456  conda install pytorch torchvision cpuonly -c pytorch
+  457  conda clean all
+  458  conda clean --all
+  459  conda install pytorch torchvision cpuonly -c pytorch
+  460  pip install -U openmim
+  461  mim install mmengine
+  462  mim install mmcv
+  463  mim install mmdet
+  464  mim install mmpose
+  465  pip install mmaction2
+  466  mim download mmaction2 --config tsn_imagenet-pretrained-r50_8xb32-1x1x8-100e_kinetics400-rgb --dest .
+  467  python ttttt 
+  468  python tttttt
+  469  python ttt.py 
+  470  pip uninstall mmcv
+  471  pip install mmcv 2.1.0
+  472  pip install mmcv==2.1.0
+  473  python ttt.py 
+  474  python tools/test.py configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb.py     checkpoints/SOME_CHECKPOINT.pth --dump result.pkl
+  475  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb_20220812-e213c223.pth --dump result.pkl
+  476  pip list | grep mmaction
+  477  ls /root/miniconda3/envs/openmmlab/lib/python3.8/site-packages/mmaction/models/localizers/
+  478  ls
+  479  python
+  480  ls
+  481  cd ..
+  482  ls
+  483  cd ..
+  484  ls
+  485  cd lib
+  486  ls
+  487  cd python3
+  488  ls
+  489  cd dist-packages/
+  490  ls
+  491  cd ..
+  492  ls
+  493  cd /
+  494  ls
+  495  /root/miniconda3/envs/openmmlab/lib/python3.8/site-packages/mmaction/models/localizers/__init__.py
+  496  ls /root/miniconda3/envs/openmmlab/lib/python3.8/site-packages/mmaction/models/localizers/__init__.py
+  497  cd /root/miniconda3/envs/openmmlab/lib/python3.8/site-packages/mmaction/models/localizers/__init__.py
+  498  cd /root/miniconda3/envs/openmmlab/lib/python3.8/site-packages/mmaction/models/localizers
+  499  ls
+  500  pwd
+  501  ls
+  502  cp
+  503  cp -r
+  504  cp -r /home/mmaction2/mmaction/models/localizers/drn /root/miniconda3/envs/openmmlab/lib/python3.8/site-packages/mmaction/models/localizers
+  505  ls
+  506  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb_20220812-e213c223.pth --dump result.pkl
+  507  pwd
+  508  cd ~
+  509  ls
+  510  cd mmaction2/
+  511  ls
+  512  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb_20220812-e213c223.pth --dump result.pkl
+  513  cd tools/
+  514  ls
+  515  cd ..
+  516  ls
+  517  cd tools/
+  518  ls
+  519  cd data/
+  520  ls
+  521  cd kinetics/
+  522  ls
+  523  cd ..
+  524  ls
+  525  cd /home/mmaction2/mmaction/models/localizers/drn
+  526  ls
+  527  cd ..
+  528  cd ,,
+  529  cd ..
+  530  ls
+  531  cd ..
+  532  ls
+  533  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb_20220812-e213c223.pth --dump result.pkl
+  534  ls -lah data/kinetics400/
+  535  ls data/kinetics400/
+  536  bash extract.sh k400_train_path.txt
+  537  wget -c https://s3.amazonaws.com/kinetics/400/test/part_0.tar.gz
+  538  wget -c https://s3.amazonaws.com/kinetics/400/test/part_1.tar.gz
+  539  bash ./k400_extractor.sh
+  540  mkdir -p ~/mmaction2/tools/data/kinetics/videos_test
+  541  tar -xvf part_0.tar.gz -C ~/mmaction2/tools/data/kinetics/videos_test --wildcards '*.mp4'
+  542  tar -xvf part_1.tar.gz -C ~/mmaction2/tools/data/kinetics/videos_test --wildcards '*.mp4'
+  543  wget -O ~/mmaction2/tools/data/kinetics/kinetics400_val_list_videos.txt "https://storage.googleapis.com/kagglesdsdata/datasets/3721472/6446831/kinetics400_val_list_videos.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20250313%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250313T055752Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=a8dc87565058a38a1d01bbb6285fba93bb421107c3db11c87409ae677842de7cbf338d91205f81471949312f2a9fb5bc0ecbe3e02d72a61522e1d46b6562be9f921bd94bd9703707c3e8ba5613f4732a0f91b07720b0db8d1e7f966cd109df479aa8ef229e0adc18c4313a0b6e67cac133c00ca4a5b50a1349e7fd6b13870b12a69fb8ca57ac59c3da9c55676a951aa08b90b7a0e11c2499b95ebc06fc76604adb737d0a592f768aaaf4492efeb29b5ff7fa34a7c042599440ed1e5b2102b6fac7f184fe29a6f2d2b38fc72a423efd2db8dfc58b93be06d7b0c84727eeca17508d76c6b5adc0f725f1a2291aaa129a1382d0c4ea8c89740fb0d6e2debc52189e"
+  544  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb_20220812-e213c223.pth --dump result.pkl
+  545  mkdir -p ~/mmaction2/tools/data/kinetics400
+  546  mv ~/mmaction2/tools/data/kinetics/kinetics400_val_list_videos.txt ~/mmaction2/tools/data/kinetics400/
+  547  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb_20220812-e213c223.pth --dump result.pkl
+  548  ls -lh ~/mmaction2/tools/data/
+  549  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb_20220812-e213c223.pth --dump result.pkl
+  550  ls -lh ~/mmaction2/tools/data/kinetics400/videos_val/
+  551  mv /home/mmaction2/part_0.tar.gz /home/mmaction2/data/kinetics400/videos_val/
+  552  mv /home/mmaction2/part_1.tar.gz /home/mmaction2/data/kinetics400/videos_val/
+  553  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb_20220812-e213c223.pth --dump result.pkl
+  554  ls -lh ~/mmaction2/tools/data/kinetics400/videos_val/
+  555  ls -lh ~data/kinetics400/videos_val/
+  556  ls -lh ~/home/mmaction2/data/kinetics400/videos_val
+  557  ls -lh ~/mmaction2/data/kinetics400/videos_val
+  558  ls -lh ~/home/mmaction2/data/kinetics400/videos_val/part_0.tar.gz
+  559  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb_20220812-e213c223.pth --dump result.pkl
+  560  wget -c https://s3.amazonaws.com/kinetics/400/test/part_2.tar.gz
+  561  wget -c https://s3.amazonaws.com/kinetics/400/test/part_3.tar.gz
+  562  wget -c https://s3.amazonaws.com/kinetics/400/test/part_4.tar.gz
+  563  wget -c https://s3.amazonaws.com/kinetics/400/test/part_5.tar.gz
+  564  wget -c https://s3.amazonaws.com/kinetics/400/test/part_6.tar.gz
+  565  wget -c https://s3.amazonaws.com/kinetics/400/test/part_7.tar.gz
+  566  wget -c https://s3.amazonaws.com/kinetics/400/test/part_8.tar.gz
+  567  wget -c https://s3.amazonaws.com/kinetics/400/test/part_9.tar.gz
+  568  wget -c https://s3.amazonaws.com/kinetics/400/test/part_10.tar.gz
+  569  wget -c https://s3.amazonaws.com/kinetics/400/test/part_4.tar.gz
+  570  mkdir -p /home/mmaction2/data/kinetics400/videos_val
+  571  tar -xvf part_2.tar.gz -C /home/mmaction2/data/kinetics400/videos_val
+  572  tar -xvf part_3.tar.gz -C /home/mmaction2/data/kinetics400/videos_val
+  573  tar -xvf part_4.tar.gz -C /home/mmaction2/data/kinetics400/videos_val
+  574  tar -xvf part_5.tar.gz -C /home/mmaction2/data/kinetics400/videos_val
+  575  tar -xvf part_6.tar.gz -C /home/mmaction2/data/kinetics400/videos_val
+  576  tar -xvf part_7.tar.gz -C /home/mmaction2/data/kinetics400/videos_val
+  577  tar -xvf part_8.tar.gz -C /home/mmaction2/data/kinetics400/videos_val
+  578  tar -xvf part_9.tar.gz -C /home/mmaction2/data/kinetics400/videos_val
+  579  tar -xvf part_10.tar.gz -C /home/mmaction2/data/kinetics400/videos_val
+  580  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb_20220812-e213c223.pth --dump result.pkl
+  581  tar -xvf part_0.tar.gz -C /home/mmaction2/data/kinetics400/videos_val
+  582  wget -c https://s3.amazonaws.com/kinetics/400/test/part_0.tar.gz
+  583  wget -c https://s3.amazonaws.com/kinetics/400/test/part_1.tar.gz
+  584  tar -xvf part_0.tar.gz -C /home/mmaction2/data/kinetics400/videos_val
+  585  tar -xvf part_1.tar.gz -C /home/mmaction2/data/kinetics400/videos_val
+  586  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb_20220812-e213c223.pth --dump result.pkl
+  587  ls /home/mmaction2/data/kinetics400/videos_val > video_list.txt
+  588  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb_20220812-e213c223.pth --dump result.pkl
+  589  free -h
+  590  ls /home/mmaction2/data/kinetics400/videos_val > video_list.txt
+  591  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb_20220812-e213c223.pth --dump result.pkl
+  592  sync && echo 3 | sudo tee /proc/sys/vm/drop_caches
+  593  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb_20220812-e213c223.pth --dump result.pkl
+  594  ls /home/mmaction2/data/kinetics400/videos_val > video_list.txt
+  595  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb_20220812-e213c223.pth --dump result.pkl
+  596  ls /home/mmaction2/data/kinetics400/videos_val > video_list.txt
+  597  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb_20220812-e213c223.pth --dump result.pkl
+  598  ls /home/mmaction2/data/kinetics400/videos_val > video_list.txt
+  599  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb_20220812-e213c223.pth --dump result.pkl
+  600  python
+  601  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb_20220812-e213c223.pth --dump result.pkl
+  602  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --dump result.pkl
+  603  /bin/python3 /home/mmaction2/help.py
+  604  conda env list
+  605  conda activate oprnmmlab
+  606  conda activate openmmlab
+  607  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --dump result.pkl
+  608  python
+  609  conda activate openmmlab
+  610  ls /home/mmaction2/data/kinetics400/videos_val > video_list.txt
+  611  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --dump result.pkl
+  612  conda activate openmmaction
+  613  conda env list
+  614  conda openmmlab
+  615  conda activate openmmlab
+  616  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --dump result.pkl
+  617  1s /home/mmaction2/mmaction2/configs/recognition/i3d/checkpoints.ckpt/label_map_k400.txt 
+  618  ls /home/mmaction2/mmaction2/configs/recognition/i3d/checkpoints.ckpt/label_map_k400.txt 
+  619  1s mmaction2/configs/recognition/i3d/checkpoints.ckpt/label_map_k400.txt 
+  620  ls /home/mmaction2/mmaction2/configs/recognition/i3d/checkpoints.ckpt/label_map_k400.txt 
+  621  ls /home/mmaction2/mmaction2/configs/recognition/i3d/
+  622  ls /home/mmaction2/mmaction2/configs/recognition/i3d/checkpoints.ckpt/label_map_k400.txt 
+  623  ls /home/mmaction2/mmaction2/configs/recognition/i3d/
+  624  ls /home/mmaction2/mmaction2/configs/recognition/i3d/checkpoints.ckpt/label_map_k400.txt 
+  625  ls /home/mmaction2/mmaction2/configs/recognition/i3d/
+  626  ls /home/mmaction2/mmaction2/configs/recognition/i3d/checkpoints.ckpt/label_map_k400.txt 
+  627  1s mmaction2/configs/recognition/i3d/checkpoints.ckpt/label_map_k400.txt 
+  628  1s /home/mmaction2/mmaction2/configs/recognition/i3d/label_map_k400.txt
+  629  1s mmaction2/configs/recognition/i3d/label_map_k400.txt
+  630  ls /home/mmaction2/mmaction2/configs/recognition/i3d/checkpoints.ckpt/label_map_k400.txt
+  631  mv /home/mmaction2/mmaction2/configs/recognition/i3d/label_map_k400.txt /home/mmaction2/mmaction2/configs/
+  632  ls /home/mmaction2/mmaction2/configs/label_map_k400.txt
+  633  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --dump result.pkl
+  634  python
+  635  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --dump result.pkl
+  636  nano mmaction/datasets/video_dataset.py
+  637  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --dump result.pkl
+  638  python
+  639  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --dump result.pkl
+  640  python
+  641  ls /home/mmaction2/mmaction2/configs/label_map_k400.txt
+  642  python
+  643  conda activate openmmlab
+  644  mmaction2/data/kinetics400/annotations/
+  645  cd /home/mmaction2/mmaction2
+  646  bash download_backup_annotations.sh Kinetics400
+  647  bash download_backup_annotations.sh kinetics400
+  648  bash dowload_annotations.sh kinetics400
+  649  bash download_annotations.sh kinetics400
+  650  mkdir -p mmaction2/data/kinetics400/annotations
+  651  cd mmaction2/data/kinetics400/annotations
+  652  # Download the latest Kinetics-400 annotation files
+  653  wget https://raw.githubusercontent.com/activitynet/ActivityNet/master/Crawler/Kinetics/data/kinetics_train.json
+  654  wget https://raw.githubusercontent.com/activitynet/ActivityNet/master/Crawler/Kinetics/data/kinetics_val.json
+  655  wget https://download.openmmlab.com/mmaction/annotation/kinetics400/kinetics400_train_list_videos.txt
+  656  wget https://download.openmmlab.com/mmaction/annotation/kinetics400/kinetics400_val_list_videos.txt
+  657  wget https://download.openmmlab.com/mmaction/annotation/kinetics400/kinetics400_test_list_videos.txt
+  658  ls mmaction2/data/kinetics400/annotations/
+  659  1s data/kinetics400/annotations
+  660  1s /home/mmaction2/data/kinetics400/annotations
+  661  ls /home/mmaction2/mmaction2/data/kinetics400/annotations
+  662  ls data/kinetics400/annotations
+  663  pwd
+  664  cd /home/mmaction2/mmaction2/
+  665  ls /home/mmaction2/mmaction2/data/kinetics400/annotations
+  666  cd /home/mmaction2/mmaction2/
+  667  ls /home/mmaction2/mmaction2/data/kinetics400/annotations
+  668  cd /home/mmaction2/mmaction2/
+  669  ls /home/mmaction2/mmaction2/data/kinetics400/annotations
+  670  ls data/kinetics400/annotations
+  671  cd /home/mmaction2/
+  672  ls data/kinetics400/annotations
+  673  ls -R mmaction2/data/kinetics400/videos_val | head -n 20
+  674  ls -R /home/mmaction2/data/kinetics400/videos_val
+  675  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --
+  676  ls /home/mmaction2/data/kinetics400/videos_val > video_list.txt
+  677  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --
+  678  ls -l data/kinetics400/videos_val/
+  679  cat data/kinetics400/annotations/kinetics400_val_list_videos.txt | grep "-_rX15rXYSk"
+  680  cat data/kinetics400/annotations/kinetics400_val_list_videos.txt | grep "-_rX15rXYSk_000125_000135.mp4"
+  681  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --
+  682  cat data/kinetics400/annotations/label_map_k400.txt
+  683  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --
+  684  conda activate openmmlab
+  685  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --
+  686  conda activate aopenmmlab
+  687  conda activate openmmlab
+  688  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretra /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --
+  689  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --dump result.pkl
+  690  cat /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py | grep label_map_k400.txt
+  691  python
+  692  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --dump result.pkl
+  693  cd /home/mmaction2/mmaction2
+  694  python tools/test.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --dump result.pkl
+  695  cd /home/mmaction2
+  696  python tools/  --dump result.pkl
+  697  python tools/test.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --dump result.pkl
+  698  conda activate openmmlab
+  699  /root/miniconda3/envs/myenv/bin/python /home/mmaction2/tools/test.py
+  700  conda activate openmmlab
+  701  conda activate open
+  702  python tools/test.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --dump result.pkl
+  703  python
+  704  python tools/test.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --dump result.pkl
+  705  ls /home/mmaction2/data/kinetics400/videos_val > video_list.txt
+  706  python tools/test.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --dump result.pkl
+  707  /bin/python3 /root/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/printEnvVariablesToFile.py /root/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/deactivate/bash/envVars.txt
+  708  conda activate openmmlab
+  709  /bin/python3 /root/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/printEnvVariablesToFile.py /root/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/deactivate/bash/envVars.txt
+  710  python tools/test.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --dump result.pkl
+  711  python tools/test_copy.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --dump result.npy
+  712  conda activate openmmlab
+  713  python tools/test.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --dump result.pkl
+  714  python tools/test_selfcode.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --dump result.npy
+  715  python tools/test_selfcode.py
+  716  python tools/test_selfcode.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --dump result.npy
+  717  python tools/test.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --dump result.pkl
+  718  grep -r "pickle.dump" mmaction2/tools/
+  719  grep -r "pickle.dump" mmaction2/
+  720  grep -r "pickle.dump" mmaction2
+  721  python tools/test_gpt.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --dump result.npy
+  722  python tools/test.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --dump result.pkl
+  723  python tools/test_gpt.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --dump result.npy
+  724  python
+  725  python tools/test.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth --dump result.pkl
+  726  /bin/python3 /root/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/printEnvVariablesToFile.py /root/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/deactivate/bash/envVars.txt
+  727  python /home/mmaction2/tools/misc/clip_feature_extraction.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth     --dump /home/mmaction2/output_features/     --video-list /home/mmaction2/data/kinetics400/kinetics400_val_list_videos.txt     --video-root /home/mmaction2/data/kinetics400/videos_val
+  728  /bin/python3 /root/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/printEnvVariablesToFile.py /root/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/deactivate/bash/envVars.txt
+  729  conda activate openmmlab
+  730  python /home/mmaction2/tools/misc/clip_feature_extraction.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth     --dump /home/mmaction2/output_features/     --video-list /home/mmaction2/data/kinetics400/kinetics400_val_list_videos.txt     --video-root /home/mmaction2/data/kinetics400/videos_val
+  731  python /home/mmaction2/tools/misc/clip_feature_extraction.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth     --output-prefix /home/mmaction2/output_features/
+  732  python /home/mmaction2/tools/misc/clip_feature_extraction.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth     /home/mmaction2/output_features/     --video-list /home/mmaction2/data/kinetics400/kinetics400_val_list_videos.txt     --video-root /home/mmaction2/data/kinetics400/videos_val
+  733  python /home/mmaction2/tools/misc/clip_feature_extraction.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth     /home/mmaction2/output_features/     --video-list /home/mmaction2/data/kinetics400/kinetics400_val_list_videos.txt     --video-root /home/mmaction2/data/kinetics400/videos_val
+  734  python /home/mmaction2/tools/misc/clip_feature_extraction.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth     /home/mmaction2/output_features/     --video-list /home/mmaction2/data/kinetics400/kinetics400_val_list_videos.txt     --video-root /home/mmaction2/data/kinetics400/videos_val
+  735  python /home/mmaction2/tools/misc/clip_feature_extraction.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth     /home/mmaction2/output_features/     --video-list /home/mmaction2/data/kinetics400/kinetics400_val_list_videos.txt     --video-root /home/mmaction2/data/kinetics400/videos_val
+  736  python /home/mmaction2/tools/misc/clip_feature_extraction.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth     /home/mmaction2/output_features/     --video-list /home/mmaction2/data/kinetics400/kinetics400_val_list_videos.txt     --video-root /home/mmaction2/data/kinetics400/videos_val
+  737  python /home/mmaction2/tools/misc/clip_feature_extraction.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth     /home/mmaction2/output_features/     --video-list /home/mmaction2/data/kinetics400/kinetics400_val_list_videos.txt     --video-root /home/mmaction2/data/kinetics400/videos_val
+  738  conda activate openmmlab
+  739  python /home/mmaction2/tools/misc/clip_feature_extraction.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth     /home/mmaction2/output_features/     --video-list /home/mmaction2/data/kinetics400/kinetics400_val_list_videos.txt     --video-root /home/mmaction2/data/kinetics400/videos_val
+  740  /bin/python3 /root/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/printEnvVariablesToFile.py /root/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/deactivate/bash/envVars.txt
+  741  conda activate openmmlab
+  742  /bin/python3 /root/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/printEnvVariablesToFile.py /root/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/deactivate/bash/envVars.txt
+  743  python /home/mmaction2/tools/misc/clip_feature_extraction.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth     --dump /home/mmaction2/output_features/     --video-list /home/mmaction2/data/kinetics400/kinetics400_val_list_videos.txt     --video-root /home/mmaction2/data/kinetics400/videos_val
+  744  /bin/python3 /root/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/printEnvVariablesToFile.py /root/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/deactivate/bash/envVars.txt
+  745  conda activate openmmlab
+  746  python /home/mmaction2/tools/misc/clip_feature_extraction.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth     --dump /home/mmaction2/output_features/     --video-list /home/mmaction2/data/kinetics400/kinetics400_val_list_videos.txt     --video-root /home/mmaction2/data/kinetics400/videos_val
+  747  conda activate openmmlab
+  748  /bin/python3 /root/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/printEnvVariablesToFile.py /root/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/deactivate/bash/envVars.txt
+  749  conda actiavte openmmlab
+  750  conda activate openmmlab
+  751  python /home/mmaction2/tools/misc/clip_feature_extraction.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth     --dump /home/mmaction2/output_features/     --video-list /home/mmaction2/data/kinetics400/kinetics400_val_list_videos.txt     --video-root /home/mmaction2/data/kinetics400/videos_val
+  752  conda activate openmmlab
+  753  python /home/mmaction2/tools/misc/clip_feature_extraction.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth     --dump /home/mmaction2/output_features/     --video-list /home/mmaction2/data/kinetics400/kinetics400_val_list_videos.txt     --video-root /home/mmaction2/data/kinetics400/videos_val
+  754  python
+  755  /bin/python3 /root/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/printEnvVariablesToFile.py /root/.vscode-server/extensions/ms-python.python-2025.2.0-linux-x64/python_files/deactivate/bash/envVars.txt
+  756  conda activate openmmlab
+  757  python /home/mmaction2/tools/misc/clip_feature_extraction.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb.py     /home/mmaction2/configs/recognition/i3d/i3d_imagenet-pretrained-r50_8xb8-dense-32x2x1-100e_kinetics400-rgb_20220812-9f46003f.pth     --dump /home/mmaction2/output_features/     --video-list /home/mmaction2/data/kinetics400/kinetics400_val_list_videos.txt     --video-root /home/mmaction2/data/kinetics400/videos_val
+  758  history > history_output.txt

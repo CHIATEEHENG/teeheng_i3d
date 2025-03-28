@@ -1,7 +1,4 @@
-_base_ = [
-    '../../_base_/models/i3d_r50.py', '../../_base_/schedules/sgd_100e.py',
-    '../../_base_/default_runtime.py'
-]
+_base_ = ['./i3d_imagenet-pretrained-r50_8xb8-32x2x1-100e_kinetics400-rgb.py']
 
 # dataset settings
 dataset_type = 'VideoDataset'
@@ -14,7 +11,7 @@ ann_file_test = 'data/kinetics400/kinetics400_val_list_videos.txt'
 file_client_args = dict(io_backend='disk')
 train_pipeline = [
     dict(type='DecordInit', **file_client_args),
-    dict(type='SampleFrames', clip_len=32, frame_interval=2, num_clips=1),
+    dict(type='DenseSampleFrames', clip_len=32, frame_interval=2, num_clips=1),
     dict(type='DecordDecode'),
     dict(type='Resize', scale=(-1, 256)),
     dict(
@@ -31,7 +28,7 @@ train_pipeline = [
 val_pipeline = [
     dict(type='DecordInit', **file_client_args),
     dict(
-        type='SampleFrames',
+        type='DenseSampleFrames',
         clip_len=32,
         frame_interval=2,
         num_clips=1,
@@ -45,10 +42,10 @@ val_pipeline = [
 test_pipeline = [
     dict(type='DecordInit', **file_client_args),
     dict(
-        type='SampleFrames',
-        clip_len=32,
+        type='DenseSampleFrames',
+        clip_len=8,
         frame_interval=2,
-        num_clips=3,
+        num_clips=1,
         test_mode=True),
     dict(type='DecordDecode'),
     dict(type='Resize', scale=(-1, 256)),
@@ -67,7 +64,6 @@ train_dataloader = dict(
         ann_file=ann_file_train,
         data_prefix=dict(video=data_root),
         pipeline=train_pipeline))
-
 val_dataloader = dict(
     batch_size=8,
     num_workers=8,
@@ -81,7 +77,7 @@ val_dataloader = dict(
         test_mode=True))
 test_dataloader = dict(
     batch_size=1,
-    num_workers=2,
+    num_workers=1,
     persistent_workers=False,
     sampler=dict(type='DefaultSampler', shuffle=False),
     dataset=dict(
@@ -90,14 +86,3 @@ test_dataloader = dict(
         data_prefix=dict(video=data_root_val),
         pipeline=test_pipeline,
         test_mode=True))
-
-val_evaluator = dict(type='AccMetric')
-test_evaluator = val_evaluator
-
-default_hooks = dict(checkpoint=dict(interval=5, max_keep_ckpts=5))
-
-# Default setting for scaling LR automatically
-#   - `enable` means enable scaling LR automatically
-#       or not by default.
-#   - `base_batch_size` = (8 GPUs) x (8 samples per GPU).
-auto_scale_lr = dict(enable=False, base_batch_size=64)

@@ -44,15 +44,17 @@ test_pipeline = [
     dict(
         type='DenseSampleFrames',
         clip_len=32,
-        frame_interval=2,
+        frame_interval=1,
         num_clips=1,
         test_mode=True),
     dict(type='DecordDecode'),
     dict(type='Resize', scale=(-1, 256)),
-    dict(type='ThreeCrop', crop_size=256),
+    dict(type='CenterCrop', crop_size=224),  # Or keep ThreeCrop if needed
     dict(type='FormatShape', input_format='NCTHW'),
     dict(type='PackActionInputs')
 ]
+
+
 
 train_dataloader = dict(
     batch_size=8,
@@ -77,8 +79,8 @@ val_dataloader = dict(
         test_mode=True))
 test_dataloader = dict(
     batch_size=1,
-    num_workers=8,
-    persistent_workers=True,
+    num_workers=1,
+    persistent_workers=False,
     sampler=dict(type='DefaultSampler', shuffle=False),
     dataset=dict(
         type=dataset_type,
